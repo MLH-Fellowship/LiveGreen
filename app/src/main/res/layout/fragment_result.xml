@@ -1,21 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".result.ResultFragment">
+  
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Result"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="16dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Location:"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/location_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Nigeria"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Carbon Intensity:"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/carbon_intensity_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="blah blah"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Recommended:"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/recommended_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Blah blah"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/result_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/hazardimage" />
 
     <TextView
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
+        android:id="@+id/result_textview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Blah blah"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/what_to_do_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat"
+        android:text="What to do?"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp" />
+
+
+</LinearLayout>
