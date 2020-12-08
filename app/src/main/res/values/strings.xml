@@ -3,6 +3,6 @@
     <string name="livegreen">LIVEGREEN</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="verdict_text">Looks like your location is not safe for massive bla blah electricity blah blah usage and all that stuff, please be mindful of how you use power and whatever before you kill us all with your excessive power usage and hate for humanity, evil person! </string>
-    <string name="onboarding_text">Protect our environment. Be aware of your contributions to carbon blah blah blah</string>
+    <string name="verdict_text">Looks like your location is not safe for electricity usage because the intensity of carbon is above safe level, please be mindful of how you use it </string>
+    <string name="onboarding_text">Protect our environment. Be aware of your contributions to carbon</string>
 </resources>

@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.project.livegreen.result.ResultFragment"
-        android:label="fragment_result"
-        tools:layout="@layout/fragment_result" >
+        android:label="Result"
+        tools:layout="@layout/fragment_result">
         <action
             android:id="@+id/action_resultFragment_to_verdictFragment"
             app:destination="@id/verdictFragment" />
@@ -17,6 +17,6 @@
     <fragment
         android:id="@+id/verdictFragment"
         android:name="com.project.livegreen.verdict.VerdictFragment"
-        android:label="fragment_verdict"
+        android:label="Verdict"
         tools:layout="@layout/fragment_verdict" />
 </navigation>
