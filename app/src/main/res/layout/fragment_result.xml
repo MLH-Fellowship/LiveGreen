@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -36,7 +37,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/montserrat"
-            android:text="Nigeria"
             android:textColor="@color/colorBlack"
             android:textSize="20sp" />
 
@@ -64,7 +64,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/montserrat"
-            android:text="blah blah"
             android:textColor="@color/colorBlack"
             android:textSize="20sp" />
 
@@ -79,25 +78,34 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Recommended:"
-            android:textColor="@color/colorPrimary"
-            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:textSize="20sp"
-            android:layout_height="wrap_content" />
+            android:fontFamily="@font/montserrat"
+            android:text="Fossil fuel percentage:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/recommended_textview"
+            android:id="@+id/fossil_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/montserrat"
-            android:text="Blah blah"
             android:textColor="@color/colorBlack"
             android:textSize="20sp" />
 
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/loadingimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="visible"
+        app:srcCompat="@drawable/loading_img"
+        tools:src="@tools:sample/avatars" />
 
 
     <ImageView
@@ -126,11 +134,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@color/colorPrimary"
         android:fontFamily="@font/montserrat"
         android:text="What to do?"
         android:textColor="@color/colorWhite"
         android:textSize="25sp" />
+
+
 
 
 </LinearLayout>
