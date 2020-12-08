@@ -106,7 +106,12 @@ class ResultFragment : Fragment() {
         viewModelFactory = ResultViewModeFactory(lon, lat)
         resultViewModel = ViewModelProvider(this, viewModelFactory).get(ResultViewModel::class.java)
         resultViewModel.carbonData.observe(viewLifecycleOwner, Observer {
-            Log.d("test", it.status)
+            if (it != null) {
+                binding.loadingimg.visibility = View.GONE
+                binding.carbonIntensityTextview.text = it.data.carbonIntensity.toString().plus(" ").plus(it.units.carbonIntensity)
+                binding.fossilTextview.text = it.data.fossilFuelPercentage.toString()
+                binding.locationTextview.text = it.countryCode
+            }
         })
     }
 }

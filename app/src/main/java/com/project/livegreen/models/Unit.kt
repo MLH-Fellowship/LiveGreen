@@ -1,5 +1,5 @@
 package com.project.livegreen.models
 
 data class Unit (
-    val units : String?
+    val carbonIntensity : String?
 )
