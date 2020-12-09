@@ -15,7 +15,7 @@ It makes use of the [CO2 Signal API](https://docs.co2signal.com/)
 
 ## Project Setup
 
-- [Download and install the app on your android device](https://drive.google.com/file/d/1N8c7oaGz6YLWu6gIM8wa2FWluqny7nYP/view?usp=sharing)
+- [Download and install the app on your android device](https://drive.google.com/file/d/1YYvs9ViT3533b5bO_0ZvQA1K10Ldk8cZ/view?usp=sharing)
 
 
 ## What we learned
@@ -35,5 +35,5 @@ It makes use of the [CO2 Signal API](https://docs.co2signal.com/)
 - Testing
 
 ## Links
-- [Quick Demo](https://drive.google.com/file/d/1-rrAIdMPaRbVJVxdy0RuTAtUp9hKpSxx/view?usp=sharing) 
+- [Quick Demo](https://vimeo.com/489104388) 
 
