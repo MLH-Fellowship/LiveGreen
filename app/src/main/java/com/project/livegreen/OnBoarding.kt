@@ -16,8 +16,12 @@ class OnBoarding : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        supportActionBar!!.hide()
+
         binding.goGreenButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }
     }
