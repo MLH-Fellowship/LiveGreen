@@ -18,5 +18,14 @@
         android:id="@+id/verdictFragment"
         android:name="com.project.livegreen.verdict.VerdictFragment"
         android:label="Verdict"
-        tools:layout="@layout/fragment_verdict" />
+        tools:layout="@layout/fragment_verdict" >
+        <action
+            android:id="@+id/action_verdictFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.project.livegreen.WebFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" />
 </navigation>

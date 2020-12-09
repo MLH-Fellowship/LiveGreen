@@ -1,6 +1,7 @@
 package com.project.livegreen.result
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Bundle
@@ -11,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -18,6 +20,7 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.project.livegreen.R
 import com.project.livegreen.databinding.FragmentResultBinding
+
 
 class ResultFragment : Fragment() {
 
@@ -34,6 +37,8 @@ class ResultFragment : Fragment() {
     private var lon : Double = 0.0
 
     private var lat : Double = 0.0
+
+    private var fossilPercentage: Float? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -78,7 +83,8 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.whatToDoButton.setOnClickListener{
-            findNavController().navigate(R.id.action_resultFragment_to_verdictFragment)
+            val bundle: Bundle = bundleOf("Fossil" to fossilPercentage)
+            findNavController().navigate(R.id.action_resultFragment_to_verdictFragment, bundle)
         }
     }
 
@@ -110,8 +116,22 @@ class ResultFragment : Fragment() {
                 binding.loadingimg.visibility = View.GONE
                 binding.carbonIntensityTextview.text = it.data.carbonIntensity.toString().plus(" ").plus(it.units.carbonIntensity)
                 binding.fossilTextview.text = it.data.fossilFuelPercentage.toString()
+                imageLogic(it.data.fossilFuelPercentage)
+                fossilPercentage = it.data.fossilFuelPercentage
                 binding.locationTextview.text = it.countryCode
             }
         })
+    }
+
+
+    @SuppressLint("SetTextI18n")
+    private fun imageLogic(ffp: Float){
+        if (ffp >= 50f){
+            binding.resultImageview.setImageResource(R.drawable.hazardimage)
+            binding.resultTextview.text = "Not safe!"
+        }else{
+            binding.resultImageview.setImageResource(R.drawable.greenimage)
+            binding.resultTextview.text = "Looks Good!"
+        }
     }
 }

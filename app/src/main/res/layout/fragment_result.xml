@@ -114,7 +114,7 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="32dp"
-        android:src="@drawable/hazardimage" />
+        android:src="@drawable/loading_img" />
 
     <TextView
         android:id="@+id/result_textview"
@@ -123,7 +123,7 @@
         android:layout_marginStart="16dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="Blah blah"
+        android:text=" "
         android:textColor="@color/colorBlack"
         android:textSize="25sp" />
 

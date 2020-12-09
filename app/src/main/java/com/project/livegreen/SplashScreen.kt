@@ -16,10 +16,17 @@ class SplashScreen : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        supportActionBar!!.hide()
 
         Handler().postDelayed({
             val intent = Intent(this, OnBoarding::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }, 1000)
     }
+
+
+
+
 }
