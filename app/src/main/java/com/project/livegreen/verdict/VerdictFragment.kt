@@ -1,5 +1,6 @@
 package com.project.livegreen.verdict
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -15,6 +16,8 @@ class VerdictFragment : Fragment() {
 
     private var _binding: FragmentVerdictBinding? = null
     private val binding get() = _binding!!
+
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,9 +31,11 @@ class VerdictFragment : Fragment() {
 
 
         if (fossilPercentage >= 50) {
-            binding.verdictTextview.text = "greater"
+            binding.verdictTextview.text =
+                "Your carbon intensity (C.I) is too high, you are advised to not use your electricity at this point. Be aware of what effects a high C.I has on your environment so you can take necessary steps to change the world. Click the button below to learn more."
         } else {
-            binding.verdictTextview.text = "less"
+            binding.verdictTextview.text =
+                "Based on these results, it looks like your carbon intensity (C.I) is low, you can go ahead and use your electricity. Be aware of what effects a high C.I has on your environment so you can take necessary steps to change the world. Click the button below to learn more."
         }
 
         binding.whateverButton.setOnClickListener {

@@ -14,7 +14,7 @@ class WebFragment : Fragment() {
 
     private var _binding: FragmentWebBinding? = null
     private val binding get() = _binding!!
-    private val url = " https://www.electricitymap.org/map"
+    private val url = "https://www.nationalgrideso.com/electricity-explained/carbon-intensity-explained"
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreateView(
