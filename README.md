@@ -15,7 +15,7 @@ It makes use of the [CO2 Signal API](https://docs.co2signal.com/)
 
 ## Project Setup
 
-- [Download and install the app on your android device]()
+- [Download and install the app on your android device](https://drive.google.com/file/d/1N8c7oaGz6YLWu6gIM8wa2FWluqny7nYP/view?usp=sharing)
 
 
 ## What we learned
@@ -23,7 +23,7 @@ It makes use of the [CO2 Signal API](https://docs.co2signal.com/)
 - How to make use of Retrofit to retrieve data from a remote data source as well as using the API Key for Authentication
 - How to make use of Repository and Factory software design patterns
 - How to make use of Webview for displaying webpages 
-
+- How to get the longitude and latitude of a user's location
 ## Challenges
 
 - Not all regions are supported by the API
@@ -35,5 +35,5 @@ It makes use of the [CO2 Signal API](https://docs.co2signal.com/)
 - Testing
 
 ## Links
-- [Quick Demo]() 
+- [Quick Demo](https://drive.google.com/file/d/1-rrAIdMPaRbVJVxdy0RuTAtUp9hKpSxx/view?usp=sharing) 
 
