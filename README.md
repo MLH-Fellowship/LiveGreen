@@ -30,10 +30,13 @@ It makes use of the [CO2 Signal API](https://docs.co2signal.com/)
 - [Regions supported](http://api.electricitymap.org/v3/zones)
 
 ## What's next?
-
+- Work on push notifications [Issue#7](https://github.com/MLH-Fellowship/LiveGreen/issues/7)
 - Publishing on playstore
 - Testing
 
 ## Links
 - [Quick Demo](https://vimeo.com/489104388) 
+
+## License
+You can read the MIT License [here](https://github.com/MLH-Fellowship/LiveGreen/blob/master/LICENSE)
 
